@@ -1,0 +1,129 @@
+<!--Estructura html DOC-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>HTML5</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quis, repellat veniam, rem voluptatum minus harum soluta iste iusto nam laudantium quo blanditiis at est cumque obcaecati nihil ipsum ullam.</p>
+    <p>New paragraph.</p>
+
+    <!--Listas ordenadas OL-->
+    <ol>
+        <li>item one</li>
+        <li>item two</li>
+            <ol>
+                <li>inside list item one</li>
+                <li>inside list item two</li>
+            </ol>
+        <li>item three</li>
+        <ul>
+            <li>inside list item one</li>
+            <li>inside list item two</li>
+        </ul>
+    </ol>
+
+    <!--Listas no ordenadas UL-->
+    <ul>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
+            <ul>
+                <li>inside list item one</li>
+                <li>inside list item two</li>
+            </ul>
+    </ul>
+
+    <!--Contenedores DIV-->
+    <div style="color:red">
+        <p>sentence one</p>
+        <p>sentence two</p>
+    </div>
+
+    <!--Contenedores lineales SPAN-->
+    <p>sentence <span style="color:red">three</span></p>   
+
+    <!--Image tags-->
+    <img src="HTML5.png" alt="Image not available">
+
+    <!--Anchor tags-->
+    <div>
+        <a href="https://www.google.com">Google</a>
+    </div>
+    <br>
+
+    <!--Tablas-->
+    <table border="1">
+        <thead>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+        </thead>
+        <tr>
+            <td>entry 1</td>
+            <td>entry 2</td>
+            <td>entry 3</td>
+        </tr>
+        <tr>
+            <td>entry 1</td>
+            <td>entry 2</td>
+            <td>entry 3</td>
+        </tr>
+    </table>
+    <br>
+
+    <!--Forms-->
+    <form action="example.html">
+        <label for="fname_id">First Name</label>
+        <input type="text" id="fname_id" name="fname"><br>
+
+        <label for="lname_id">Last Name</label>
+        <input type="text" id="lname_id" name="lname"><br> 
+
+        <input type="submit">
+    </form>
+
+    <form action="example.html">
+        <label for="email_id">Email:</label>
+        <input type="email" id="email_id" name="email"><br>
+
+        <label for="pw_id">Password:</label>
+        <input type="password" id="pw_id" name="pw"><br>
+
+        <input type="submit" value="Confirmar">
+    </form>
+
+    <h1>Hotel Feedback</h1>
+    <form action="example.html">
+        <p>Are you from inside or outside USA?</p>
+        <label for="in">Inside</label>
+        <input type="radio" id="in" name="loc" value="1"><br>
+
+        <label for="out">Outside</label>
+        <input type="radio" id="out" name="loc" value="2"><br>
+
+        <input type="submit">
+    </form>
+
+    <form action="example.html">
+        <p>How was your service?</p>
+        <select name="stars" id="">
+            <option value="Great">3</option>
+            <option value="Ok">2</option>
+            <option value="Bad">1</option>
+        </select>
+    </form>
+
+    <form action="">
+        <p>Any other comments?</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+
+</body>
+</html>

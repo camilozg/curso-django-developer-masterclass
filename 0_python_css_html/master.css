@@ -1,0 +1,73 @@
+
+/* font */
+body{
+    background-color: cornflowerblue;
+    font-family:"Dancing Script";
+    font-size: 100%;
+
+}
+
+h1{
+    color: brown; 
+    text-align: center;
+    font-size:  40px;
+
+}
+
+
+/* font: 1em = default font size 16px */
+p{
+    font-size: 1em;
+}
+
+h2{
+    color:blue;
+    background-color:antiquewhite;
+}
+
+div{
+    background-color: green;
+    border-color: orange;
+    border-width: 5px;
+    border-style:solid;
+}
+
+span{
+    background-color: red;
+}
+
+ /* class */
+.myclass{
+ color: violet;
+}
+
+/* id */
+#one{
+    color:aqua;
+}
+
+#two{
+    color: bisque;
+}
+
+/* padding, margin and border */
+
+#up{
+    border: 10px solid black;
+    /* top right botom left*/
+    margin: 25px 100px 150px 300px;
+}
+
+#down{
+    border: 10px solid black;
+    padding-top: 20px;
+}
+
+#central{
+    border: 5px solid green;
+    margin: 50px;
+}
+
+.extra{
+    border: 2px solid black;
+}
