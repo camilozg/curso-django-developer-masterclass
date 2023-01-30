@@ -1,0 +1,10 @@
+<h1>List view (teacher_list.html)</h1>
+<ul>
+    {% for teacher in teacher_list %}
+        <li>
+            <a href="{% url 'classroom:teacher_detail' pk=teacher.id %}"> {{teacher.first_name}} {{teacher.last_name}} </a>
+            <a href="{% url 'classroom:update_teacher' pk=teacher.id %}" style = "color:white; background-color:black"> edit </a>
+            <a href="{% url 'classroom:delete_teacher' pk=teacher.id %}" style = "color:white; background-color:red"> delete </a>
+        </li>
+    {% endfor %}
+</ul>

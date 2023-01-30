@@ -1,0 +1,7 @@
+{
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django,pylint_celery",
+        "--django-settings-module=library.settings",
+        "--disable=C0111" // Missing module docstring
+    ],
+}

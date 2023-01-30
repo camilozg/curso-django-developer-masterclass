@@ -1,0 +1,32 @@
+{# Para heerdar de un template a nivel del proyecto hay que agregar la ruta en las settings del proyecto #}
+{# SETTINGS > TEMPLATES > DIRS: os.path.join(BASE_DIR,'templates/') #}
+
+{% extends 'base.html' %}
+
+{# load static carga el directorio de archivos estáticos de cada app #}
+{# hay que confirmar de que en las settings del proyecto esté el módulo de static: INSTALLED_APPS = ['django.contrib.staticfiles'] #}
+{# tambien confirmar en las settings del proyecto el directorio de static: STATIC_URL = 'static/' #}
+{# cuando se crea el directorio static hay que reiniciar el server para que funcione correctamente #}
+{% load static %}
+
+{% block content %}
+°<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=qqq, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<h1>THIS IS INSIDE THE BLOCK IN EXAMPLE INHERITANCE HTML</h1>
+
+<img src="{% static 'my_app/django-logo.png' %}" alt="my image">
+{# para crear un directorio global de static al nivel del proyecto se debe crear la siguiente variable en las settings #}
+{# STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')] #}
+<img src="{% static 'python-logo.png' %}" alt="my image">
+
+{% endblock content %}

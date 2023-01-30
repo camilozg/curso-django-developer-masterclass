@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>VARIABLE HTML</h1>
+
+    <h2> First name is {{first_name}} and last name is {{last_name}}</h2>
+    
+    {# documentación de filtros y tags: https://docs.djangoproject.com/en/4.1/ref/templates/builtins/ #}
+    {# filtros #}
+    <h2> Upper filter: {{first_name | upper}}</h2>
+    <h2> Lenght filter: {{first_name | length}}</h2>
+
+    {# acceder a los elementos de las variables #}
+    <h2>{{some_list.0}}</h2>
+    <h2>{{some_list.1}}</h2>
+    <h2>{{some_list.2}}</h2>
+    <h2>{{some_dict.inside_key}}</h2>
+
+    {# for tag #}
+    <ul>
+    {% for item in some_list %}
+        <li>{{item}}</li>
+    {% endfor %}
+    </ul>
+
+    <ul>    
+    {% for k, v in some_dict.items %}
+        <li>{{v}}</li>
+    {% endfor %}
+    </ul>
+
+    {# if tag #}
+    {% if user_logged_in %}
+        <h2>Welcome back you are logged in</h2>
+    {% endif %}
+
+    {% if user_logged_in == False %}
+        <h2>You are not logged in</h2>
+    {% else %}
+        <h2>Welcome back {{first_name}} you are logged in</h2>
+    {% endif %}
+
+</body>
+</html>
